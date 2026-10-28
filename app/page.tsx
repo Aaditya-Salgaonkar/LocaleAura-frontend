@@ -9,7 +9,7 @@ import EvaluationPanel from "@/components/EvaluationPanel";
 import EnterpriseTabs, { DeliverableTab } from "@/components/EnterpriseTabs";
 import Image from "next/image";
 
-const API_BASE = "http://localhost:4000/api/architect";
+const API_BASE = process.env.API_BASE;
 
 export default function LocaleAuraDashboard() {
   const [loading, setLoading] = useState<boolean>(false);
