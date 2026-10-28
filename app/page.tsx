@@ -21,13 +21,13 @@ export default function LocaleAuraDashboard() {
   const [isFormOpen, setIsFormOpen] = useState<boolean>(false);
 
   const [naturalPrompt, setNaturalPrompt] = useState<string>("");
-  const [locationQuery, setLocationQuery] = useState<string>("SoHo, New York");
+  const [locationQuery, setLocationQuery] = useState<string>("");
   const [spaceType, setSpaceType] = useState<SpaceType>("boutique_retail");
   const [seedNames, setSeedNames] = useState<string>(
-    "Acne Studios, Frank Ocean, Kinfolk",
+    "",
   );
   const [vibeKeywords, setVibeKeywords] = useState<string>(
-    "brutalist, editorial, curated",
+    "",
   );
 
   const [result, setResult] = useState<Record<string, unknown> | null>(null);
@@ -156,7 +156,7 @@ export default function LocaleAuraDashboard() {
     }) || neighborPlaces[2];
 
   const currentRegion = String(
-    inputData?.locationQuery ?? locationQuery ?? "SoHo, New York",
+    inputData?.locationQuery ?? locationQuery ?? "",
   );
   const winningGeohash = String(
     commercialROI?.winningGeohash ?? "block_40.705_-74.004",
