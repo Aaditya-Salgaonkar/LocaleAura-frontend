@@ -21,7 +21,7 @@
 
 ## Overview & Architecture
 
-- **Type:** Enterprise B2B SaaS Monorepo (Next.js 14 Frontend + NestJS 10 Agentic Microservice Backend)
+- **Type:** Enterprise B2B SaaS Repo (Next.js 14 Frontend + NestJS 10 Agentic Microservice Backend)
 - **Language / Runtime:** TypeScript / Node.js 20 LTS (ESM)
 - **Data Stores:** Qloo REST API (External Vector & Knowledge Graph), In-Memory Response Caching / SQLite Local Store
 
